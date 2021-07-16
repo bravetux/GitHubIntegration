@@ -10,7 +10,7 @@ main.o:main.c
 	gcc main.c -lstr -I/. -L/. -o main
 	
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	gcc $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -rf *.o *.so

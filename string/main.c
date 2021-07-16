@@ -33,7 +33,7 @@ int main()
         printf("\nS1: Hello Ramkumar Match \nS2: Hello, World \n NC %d \nResult: %d", nc, sstrncmp("Hello Ramkumar", "Hello, World", nc));
 
 //Strfry
-	printf("\nStrfry \nString %s \nResult: %s", "Hello", sstrfry("Hello"));
+	//printf("\nStrfry \nString %s \nResult: %s", "Hello", sstrfry("Hello"));
 //Strstr
 	printf("\nS: Hello Ramkumar \nSS:R \nResult: %s",sstrstr("Hello Ramkumar", "R"));
 //Strcpy

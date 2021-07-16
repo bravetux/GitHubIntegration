@@ -12,7 +12,7 @@ char * sstrdup(const char *s)
         strcpy(result, s); //Copy string into destination
         return result;
 }
-
+#if 0
 char *sstrfry(char *s)
 {
         int i, j, temp, len = strlen(s);
@@ -21,11 +21,12 @@ char *sstrfry(char *s)
         char *r = (char *)malloc(strlen(s)+1);
         if (r == (char *)0)
                 return (char*)0;
-        srandom(time(NULL));
+        //srandom(time(NULL));
+	random();
         for(i=0; i<len; i++)
         {
 begin:
-                temp = rand();
+                temp = random();
                 for (j=0 ; j<len; j++)
                         if ((temp % len) == t[j])
                                 goto begin;
@@ -43,4 +44,4 @@ begin:
 
         return r;
 }
-
+#endif
