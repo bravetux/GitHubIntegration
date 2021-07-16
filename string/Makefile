@@ -3,8 +3,8 @@ CFLAGS = -Wall
 libstr.so: $(file)
 	gcc --share $(file) -o libstr.so
 
-#libcmp.o:libcmp.c
-#	gcc -c libcmp.c -o libcmp.o
+libcmp.o:libcmp.c
+	gcc -c libcmp.c -o libcmp.o
 
 main.o:main.c
 	gcc main.c -lstr -I/. -L/. -o main
