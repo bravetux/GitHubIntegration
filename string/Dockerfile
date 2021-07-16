@@ -1,9 +1,9 @@
 FROM gcc:latest
 
-COPY . /usr/src/test
+COPY . /usr/src/string
 
-WORKDIR /usr/src/test
+WORKDIR /usr/src/string
 
-RUN gcc -o hello hello.c
+RUN make clean; make make main.o
 
-CMD ["hello"]
+CMD ["main"]
